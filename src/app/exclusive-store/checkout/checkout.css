@@ -1,0 +1,22 @@
+/* checkout */
+    body {
+        background: #f5f7fa;
+    }
+    .checkout-card {
+        border-radius: 12px;
+        border: 1px solid #e3e3e3;
+    }
+    .product-img {
+        width: 60px; 
+        height: 60px; 
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    .sticky-summary {
+        position: sticky;
+        top: 20px;
+    }
+    .payment-icons img {
+        width: 45px;
+        margin-right: 5px;
+    }

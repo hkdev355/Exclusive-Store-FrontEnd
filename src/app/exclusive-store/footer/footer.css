@@ -1,0 +1,52 @@
+.footer-section {
+    position: absolute;
+    background-color: rgb(36 35 34);
+    color: rgb(180 145 89);
+    align-items: center;
+    /* height: 50px; */
+    padding-top: 30px;
+    padding-left: 80px;
+    min-width: 100%;
+    /* position: fixed; */
+    display: block;
+}
+
+.footer-list-option {
+    display: flex;
+    gap: 100px;
+
+}
+
+.footer-list-option ul {
+    list-style: none;
+}
+
+.footer-list-option ul li:first-child {
+    font-size: 25px;
+    padding-bottom: 25px;
+}
+
+.social-media {
+    display: flex;
+    /* padding-top: 30px; */
+    gap: 620px;
+}
+
+.social-media div ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.download-from {
+    padding: 0px;
+}
+
+.download-from li img {
+    width: 130px;
+    height: 40px;
+}
+
+.app-store {
+    border-radius: 5px;
+}

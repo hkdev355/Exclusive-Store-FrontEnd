@@ -1,0 +1,13 @@
+.brands {
+    background-color: #242322;
+    color: #fff;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.brand-img-section div img {
+    height: 100px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}

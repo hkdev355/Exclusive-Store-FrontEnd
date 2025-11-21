@@ -1,0 +1,52 @@
+.text-section1 {
+    position: absolute;
+    bottom: 61%;
+    align-items: center;
+    left: 11%;
+    font-size: larger;
+    color: #fff;
+
+}
+
+.img-section1 {
+    display: block;
+    padding: 0px;
+    position: relative;
+
+}
+
+.img-section1 img {
+    border-radius: 7%;
+
+}
+
+.txt-arrival {
+    padding-left: 3%;
+}
+
+.txt-img-section2 div {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.txt-img-section2 div img {
+    height: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.product-name {
+    padding-top: 10px;
+    /* padding-left: 20px; */
+}
+
+.product-name div button {
+    font-size: small;
+    border: none;
+    border-radius: 6px;
+    color: #807d7e;
+    padding-block: 1px;
+    padding-inline: 6px;
+}
+
