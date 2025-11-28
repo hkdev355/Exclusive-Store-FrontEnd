@@ -5,13 +5,14 @@ import {Carousel} from './exclusive-store/home/carousel/carousel';
 import {Main} from './exclusive-store/home/main/main';
 import {Productlist} from './exclusive-store/productlist/productlist';
 import {Checkout} from './exclusive-store/checkout/checkout';
+import {RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [ Header, Footer, Checkout],
+  imports: [ Header, Footer, RouterOutlet],
   template: `
     <app-header></app-header>
-    <app-checkout></app-checkout>
+    <router-outlet></router-outlet>
     <app-footer></app-footer>
   `,
   styleUrls: ['./app.css'],

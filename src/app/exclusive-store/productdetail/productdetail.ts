@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-productdetail',
-  imports: [],
+  imports: [RouterLink],
   template: `
     <div class="container my-5">
         <div class="row">
@@ -44,7 +45,10 @@ import { Component } from '@angular/core';
 
                 <div class="mb-3">
                     <button class="btn btn-primary btn-lg me-2 add-to-cart">Add to Cart</button>
+                    <a [routerLink]="['/checkout']">
                     <button class="btn btn-outline-secondary btn-lg">Buy Now</button>
+                    </a>
+
                 </div>
 
                 <hr>

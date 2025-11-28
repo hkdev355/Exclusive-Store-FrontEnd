@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Carousel } from '../carousel/carousel';
 import { Description } from '../description/description';
 import { NewArrivals } from '../new-arrivals/new-arrivals';
 import { NewPopular } from '../new-popular/new-popular';
@@ -7,8 +8,9 @@ import { Brands } from '../brands/brands';
 
 @Component({
   selector: 'app-main',
-  imports: [Description, NewArrivals, NewPopular, Brands],
+  imports: [Carousel ,Description, NewArrivals, NewPopular, Brands],
   template: `
+    <app-carousel></app-carousel>
     <div class="container">
 
 

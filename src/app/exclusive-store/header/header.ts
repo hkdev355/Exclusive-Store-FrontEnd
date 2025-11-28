@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-header',
-  imports: [],
-  template: `
+    selector: 'app-header',
+    imports: [RouterLink],
+    template: `
     <!-- Header start -->
     <div class="top-bar">
         <div>
@@ -12,8 +13,16 @@ import { Component } from '@angular/core';
         <div>
             <ul class="top-option ">
 
-                <li class="">Home</li>
-                <li class="">Products</li>
+                <li class="">
+                <a [routerLink]="['/']">
+                    Home
+                </a>
+                </li>
+                <li class="">
+                <a [routerLink]="['/product-list']">
+                    Products
+                </a>
+                </li>
             </ul>
         </div>
 
@@ -39,8 +48,8 @@ import { Component } from '@angular/core';
     </div>
     <!-- Header End -->
   `,
-  styleUrls: ['./header.css'],
-  styles: ``,
+    styleUrls: ['./header.css'],
+    styles: ``,
 
 })
 export class Header {

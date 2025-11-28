@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import { ProductSection } from './products/products';
+import { ProductsInterface } from './productsInterface';
+
 
 @Component({
-  selector: 'app-productlist',
-  imports: [],
-  template: `
+    selector: 'app-productlist',
+    imports: [ProductSection],
+    template: `
     <div class="container">
         <div class="row">
 
@@ -62,111 +65,12 @@ import { Component } from '@angular/core';
                     </div>
                 </div>
                 <div class="row txt-img-section2">
-                    <div class="col-md-3 p-3">
-                        <img src="assets/imgs/products/domino-studio-164_6wVEHfI-unsplash.jpg" class="d-block w-100 "
-                            alt="...">
-                        <div class="row product-name">
-                            <div class="col-md-8">
-                                <p>Nike Red Shoe</p>
-                            </div>
-                            <div class="col-md-4">
-                                <button>View</button>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-md-3 p-3">
-                        <img src="assets/imgs/products/mobina-ghazazani-lnbuoKz2GlM-unsplash.jpg" class="d-block w-100 "
-                            alt="...">
-                        <div class="row product-name">
-                            <div class="col-md-8">
-                                <p>Black Bag</p>
-                            </div>
-                            <div class="col-md-4">
-                                <button>View</button>
-                            </div>
-                        </div>
-                    </div>
+                    @for(product of products; track $index) {
+                    <app-products  [product]="product" class="col-md-3 p-3"></app-products>
+                    }
+      
 
-                    <div class="col-md-3 p-3">
-                        <img src="assets/imgs/products/giorgio-trovato-K62u25Jk6vo-unsplash.jpg" class="d-block w-100 "
-                            alt="...">
-                        <div class="row product-name">
-                            <div class="col-md-8">
-                                <p>Sun Glasses</p>
-                            </div>
-                            <div class="col-md-4">
-                                <button>View</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 p-3">
-                        <img src="assets/imgs/products/mohammed-attia-wYVKRBIchV0-unsplash.jpg" class="d-block w-100 "
-                            alt="...">
-                        <div class="row product-name">
-                            <div class="col-md-8">
-                                <p>Sports Shoe</p>
-                            </div>
-                            <div class="col-md-4">
-                                <button>View</button>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-3 p-3">
-                        <img src="assets/imgs/products/mostafa-mahmoudi-J4DnKxz_3sA-unsplash.jpg" class="d-block w-100 "
-                            alt="...">
-                        <div class="row product-name">
-                            <div class="col-md-8">
-                                <p>Stylish Bag</p>
-                            </div>
-                            <div class="col-md-4">
-                                <button>View</button>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-3 p-3">
-                        <img src="assets/imgs/products/daniel-storek-JM-qKEd1GMI-unsplash.jpg" class="d-block w-100 "
-                            alt="...">
-                        <div class="row product-name">
-                            <div class="col-md-8">
-                                <p>Stylish Shoe</p>
-                            </div>
-                            <div class="col-md-4">
-                                <button>View</button>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-3 p-3">
-                        <img src="assets/imgs/products/c-d-x-PDX_a_82obo-unsplash.jpg" class="d-block w-100 " alt="...">
-                        <div class="row product-name">
-                            <div class="col-md-8">
-                                <p>Headset</p>
-                            </div>
-                            <div class="col-md-4">
-                                <button>View</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 p-3">
-                        <img src="assets/imgs/products/personalgraphic-com-glY1L-eo0Fc-unsplash.jpg" class="d-block w-100 "
-                            alt="...">
-                        <div class="row product-name">
-                            <div class="col-md-8">
-                                <p>Travelling Bag</p>
-                            </div>
-                            <div class="col-md-4">
-                                <button>View</button>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
             </div>
@@ -175,9 +79,51 @@ import { Component } from '@angular/core';
 
     </div>
   `,
-  styleUrls: ['./productlist.css'],
-  styles: ``
+    styleUrls: ['./productlist.css'],
+    styles: ``
 })
 export class Productlist {
-
+    products: ProductsInterface[] =
+        [
+            {
+                id: 1,
+                name: 'Black Bag',
+                img_url: 'assets/imgs/products/mobina-ghazazani-lnbuoKz2GlM-unsplash.jpg'
+            },
+            {
+                id: 2,
+                name: 'Sun Glasses',
+                img_url: 'assets/imgs/products/giorgio-trovato-K62u25Jk6vo-unsplash.jpg'
+            },
+            {
+                id: 3,
+                name: 'Sport Shoes',
+                img_url: 'assets/imgs/products/mohammed-attia-wYVKRBIchV0-unsplash.jpg'
+            },
+            {
+                id: 4,
+                name: 'Stylish Bag',
+                img_url: 'assets/imgs/products/mostafa-mahmoudi-J4DnKxz_3sA-unsplash.jpg'
+            },
+            {
+                id: 5,
+                name: 'Stylish Shoes',
+                img_url: 'assets/imgs/products/daniel-storek-JM-qKEd1GMI-unsplash.jpg'
+            },
+            {
+                id: 6,
+                name: 'Headset',
+                img_url: 'assets/imgs/products/c-d-x-PDX_a_82obo-unsplash.jpg'
+            },
+            {
+                id: 7,
+                name: 'Traveling Bag',
+                img_url: 'assets/imgs/products/personalgraphic-com-glY1L-eo0Fc-unsplash.jpg'
+            },
+            {
+                id: 8,
+                name: 'Nike Red Shoe',
+                img_url: 'assets/imgs/products/domino-studio-164_6wVEHfI-unsplash.jpg'
+            }
+        ];
 }

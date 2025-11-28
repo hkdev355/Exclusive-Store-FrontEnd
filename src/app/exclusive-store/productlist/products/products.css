@@ -1,0 +1,20 @@
+.product-name {
+    padding-top: 10px;
+    /* padding-left: 20px; */
+}
+
+.product-name div button {
+    font-size: small;
+    border: none;
+    border-radius: 6px;
+    color: #807d7e;
+    padding-block: 1px;
+    padding-inline: 6px;
+}
+
+img {
+    height: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
