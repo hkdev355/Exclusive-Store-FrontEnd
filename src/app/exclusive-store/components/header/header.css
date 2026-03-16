@@ -1,0 +1,45 @@
+.logo {
+    height: 80px;
+    width: 80px;
+}
+
+.search {
+    color: #807D7E;
+    background-color: #f6f6f6;
+    text-indent: 30px;
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+}
+
+.input-search-icon {
+    position: absolute;
+    padding-top: 2px;
+    padding-left: 4px;
+    color: #807D7E;
+}
+
+.profile-icon {
+    display: flex;
+    gap: 5px;
+}
+
+.profile-icon i {
+    color: #807D7E;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+.top-option li a{
+     color: #807D7E ;
+     text-decoration: none;
+     padding: 20px;
+     border-radius: 8px;
+}
+
+ .top-option li a:hover,
+.profile-icon i:hover {
+    color: black;
+    background-color: #c7c6c6;
+}

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ProductSection } from './products/products';
-import { ProductsInterface } from './productsInterface';
+import { ProductSection } from '../../components/products/products';
+import { ProductsInterface } from '../../interface/product/productsInterface';
 
 
 @Component({

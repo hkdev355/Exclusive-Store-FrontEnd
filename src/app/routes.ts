@@ -1,8 +1,8 @@
 import {Route, Routes} from '@angular/router';
-import { Main } from "./exclusive-store/home/main/main";
-import { Productlist } from "./exclusive-store/productlist/productlist";
-import { Productdetail } from "./exclusive-store/productdetail/productdetail";
-import { Checkout } from "./exclusive-store/checkout/checkout";
+import { Main } from "./exclusive-store/pages/home/main/main";
+import { Productlist } from "./exclusive-store/pages/productlist/productlist";
+import { Productdetail } from "./exclusive-store/pages/productdetail/productdetail";
+import { Checkout } from "./exclusive-store/pages/checkout/checkout";
 
 const routeConfig: Routes = [
   {

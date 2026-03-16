@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { Carousel } from '../carousel/carousel';
-import { Description } from '../description/description';
-import { NewArrivals } from '../new-arrivals/new-arrivals';
-import { NewPopular } from '../new-popular/new-popular';
-import { Brands } from '../brands/brands';
+import { Carousel } from '../../../components/carousel/carousel';
+import { Description } from '../../../components/description/description';
+import { NewArrivals } from '../../../components/new-arrivals/new-arrivals';
+import { NewPopular } from '../../../components/new-popular/new-popular';
+import { Brands } from '../../../components/brands/brands';
 
 
 @Component({
