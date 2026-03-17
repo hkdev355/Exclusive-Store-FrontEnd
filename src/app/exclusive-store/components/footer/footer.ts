@@ -75,8 +75,8 @@ import { Component } from '@angular/core';
                 <span class="d-block fw-semibold">Download The App</span>
 
                 <div class="d-flex justify-content-md-end gap-2 mt-2">
-                    <img src="assets/imgs/download from play store.png" style="height:40px;">
-                    <img src="assets/imgs/download on app store.png" style="height:40px;" class="rounded-1">
+                    <img src="assets/imgs/download-from-play-store.webp" style="height:40px;">
+                    <img src="assets/imgs/download-on-app-store.webp" style="height:40px;" class="rounded-1">
                 </div>
             </div>
 

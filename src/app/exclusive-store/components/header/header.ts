@@ -9,7 +9,7 @@ import { RouterLink } from '@angular/router';
     <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <img class="logo" src="assets/imgs/ChatGPT Image Nov 3, 2025, 07_15_56 PM.png" name="Logo">
+            <img class="logo" src="assets/imgs/logo-transparent.webp" name="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">

@@ -14,19 +14,19 @@ import { Component } from '@angular/core';
 
                 <div class="row  brand-img-section">
                     <div class="col-md-3 p-3">
-                        <img src="assets/imgs/brand/logo1.jpeg" class="d-block w-100 " alt="...">
+                        <img src="assets/imgs/brand/logo1.webp" class="d-block w-100 " alt="...">
                     </div>
 
                     <div class="col-md-3 p-3">
-                        <img src="assets/imgs/brand/logo2.png" class="d-block w-100 " alt="...">
+                        <img src="assets/imgs/brand/logo2.webp" class="d-block w-100 " alt="...">
                     </div>
 
                     <div class="col-md-3 p-3">
-                        <img src="assets/imgs/brand/logo3.png" class="d-block w-100 " alt="...">
+                        <img src="assets/imgs/brand/logo3.webp" class="d-block w-100 " alt="...">
                     </div>
 
                     <div class="col-md-3 p-3">
-                        <img src="assets/imgs/brand/logo4.png" class="d-block w-100 " alt="...">
+                        <img src="assets/imgs/brand/logo4.webp" class="d-block w-100 " alt="...">
                     </div>
                 </div>
 
